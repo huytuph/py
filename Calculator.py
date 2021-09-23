@@ -38,7 +38,7 @@ while restart == "y":
     else:
 	    print("\n>> Error: sum ting wong!!\n>> please try again.\n")
 
-    restart = str(input("\nStart Again? [y/n]: "))
+    restart = input("\nStart Again? [y/n]: ")
     if restart == "y":
         restart = "y"
     else:
