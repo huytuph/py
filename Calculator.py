@@ -11,10 +11,10 @@ def c(num1,num2):
 def d(num1,num2):
     print(f"\n{num1} - {num2} = {num1 - num2}")
 
-print("\n\n:::: Tu's Calculator ::::\n")
+print("\n\n:::: Tu's Calculator ::::")
 
-restart = "y"
-while restart == "y":
+restart = 1
+while restart == 1:
     num1 = float(input("\n>> Enter a number: "))
 
     operator = str(input("""
@@ -27,19 +27,19 @@ while restart == "y":
 
     num2 = float(input("\n>> Enter another number: "))
 
-    if (operator) == "a":
+    if operator == "a":
         a(num1,num2)
-    elif (operator) == "b":
+    elif operator == "b":
 	    b(num1,num2)
-    elif (operator) == "c":
+    elif operator == "c":
         c(num1,num2)
-    elif (operator) == "d":
+    elif operator == "d":
         d(num1,num2)
     else:
-	    print("\n>> Error: sum ting wong!!\n>> please try again.\n")
+	    print("\n>> Error: sum ting wong!!\n>> please try again.")
 
     restart = input("\nStart Again? [y/n]: ")
     if restart == "y":
-        restart = "y"
-    else:
+        restart = 1
+    elif restart == "n":
         break
