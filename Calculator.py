@@ -1,20 +1,26 @@
 print("\n\n:::: Tu's Calculator ::::\n")
 
-x = float(input("Enter a number: "))
+x = float(input("\nEnter a number: "))
 while True:
-    operator = str(input("""
+    operator = input("""
 >> Select an operation: 
 (a) Multiply
 (b) Divide
 (c) Add 
 (d) Subtract
 (e) Calculate
->> """))
+>> """)
     if operator == "e":
         print(x)
-        break
+        restart = input("Start again? [y/n]: ")
+        if restart == "y":
+            x = float(input("\nEnter a number: "))
+            continue
+        elif restart == "n":
+            print("\n\n\n>> Tu is the Best !! <<\n\n\n")
+            break
 
-    y = float(input("Enter a number: "))
+    y = float(input("\nEnter a number: "))
 
     if operator == "a":
         x *= y
