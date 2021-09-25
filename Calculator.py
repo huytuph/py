@@ -1,45 +1,26 @@
-# Multiplication
-def a(num1,num2):
-    print(f"\n{num1} * {num2} = {num1 * num2}")
-# Division
-def b(num1,num2):
-    print(f"\n{num1} / {num2} = {num1 / num2}")
-# Addition
-def c(num1,num2):
-    print(f"\n{num1} + {num2} = {num1 + num2}")
-# Subtraction
-def d(num1,num2):
-    print(f"\n{num1} - {num2} = {num1 - num2}")
+print("\n\n:::: Tu's Calculator ::::\n")
 
-print("\n\n:::: Tu's Calculator ::::")
-
-restart = 1
-while restart == 1:
-    num1 = float(input("\n>> Enter a number: "))
-
+x = float(input("Enter a number: "))
+while True:
     operator = str(input("""
 >> Select an operation: 
-(a) Multiplication 
-(b) Divsion 
-(c) Addition 
-(d) Subtraction 
-: """))
+(a) Multiply
+(b) Divide
+(c) Add 
+(d) Subtract
+(e) Calculate
+>> """))
+    if operator == "e":
+        print(x)
+        break
 
-    num2 = float(input("\n>> Enter another number: "))
+    y = float(input("Enter a number: "))
 
     if operator == "a":
-        a(num1,num2)
+        x *= y
     elif operator == "b":
-	    b(num1,num2)
+        x /= y
     elif operator == "c":
-        c(num1,num2)
+        x += y
     elif operator == "d":
-        d(num1,num2)
-    else:
-	    print("\n>> Error: sum ting wong!!\n>> please try again.")
-
-    restart = input("\nStart Again? [y/n]: ")
-    if restart == "y":
-        restart = 1
-    elif restart == "n":
-        break
+        x -= y
