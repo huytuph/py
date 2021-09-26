@@ -2,15 +2,8 @@ print("\n\n:::: Tu's Calculator ::::\n")
 
 x = float(input("\nEnter a number: "))
 while True:
-    operator = input("""
->> Select an operation: 
-(a) Multiply
-(b) Divide
-(c) Add 
-(d) Subtract
-(e) Calculate
->> """)
-    if operator == "e":
+    operator = input(">> Select an operation [*,/,+,-,=]: ")
+    if operator == "=":
         print(x)
         restart = input("Start again? [y/n]: ")
         if restart == "y":
@@ -22,11 +15,11 @@ while True:
 
     y = float(input("\nEnter a number: "))
 
-    if operator == "a":
+    if operator == "*":
         x *= y
-    elif operator == "b":
+    elif operator == "/":
         x /= y
-    elif operator == "c":
+    elif operator == "+":
         x += y
-    elif operator == "d":
+    elif operator == "-":
         x -= y
