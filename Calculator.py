@@ -2,7 +2,7 @@ print("\n\n:::: Tu's Calculator ::::\n")
 
 x = float(input("\nEnter a number: "))
 while True:
-    operator = input(">> Select an operation [*,/,+,-,=]: ")
+    operator = input(">> Select an operation [* / + - =]: ")
     if operator == "=":
         print(x)
         restart = input("Start again? [y/n]: ")
@@ -12,9 +12,7 @@ while True:
         elif restart == "n":
             print("\n\n\n>> Tu is the Best !! <<\n\n\n")
             break
-
     y = float(input("\nEnter a number: "))
-
     if operator == "*":
         x *= y
     elif operator == "/":
