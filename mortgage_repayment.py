@@ -5,9 +5,9 @@ print("""
 p = float(input("Principal ammount: ")) # Principal loan ammount
 i = float(input("Interest Rate p.a: ")) / 100 # Interest rate
 t = int(input("Term: ")) # Duration of the loan in years
-n = int(input("Number of repayments per year: ")) # repayments p.a
+n = int(input("Number of repayments per year: ")) # number of repayments p.a
 
-r_bal = p * -1 # remaining negative Balance
+r_bal = p * -1 # remaining Balance
 r_n = n * t # remaining Number of payments
 
 i_f = i / n # interest Rate per repayment
