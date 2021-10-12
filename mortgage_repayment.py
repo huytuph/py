@@ -1,5 +1,5 @@
 print("""
->> Mortgage Repayment Comparision <<
+>> Mortgage Repayment Calculator <<
 """)
 
 p = float(input("Principal ammount: ")) # Principal loan ammount
