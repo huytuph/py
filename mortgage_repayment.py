@@ -24,7 +24,7 @@ while r_bal <= 0:
     r_n -= 1
     r_bal -= p_pay
            
-y = n_total // n # paid off in years
+y = n_total // n # years to pay off
 m = n_total % n # remaining months
 
 print(f"""
@@ -32,5 +32,5 @@ print(f"""
 total Interest Paid: {i_total}
 total Number of repayments made: {n_total}
 Paid off in: {y} years and {m} months
-remaining balance: {r_bal}
+current balance: {r_bal}
 """)
