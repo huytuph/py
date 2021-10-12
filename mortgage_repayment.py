@@ -1,6 +1,3 @@
-# formula
-# amt = p[i(1+i)**r_n]/[(1+i)**r_n-1]
-
 print("""
 >> Mortgage Repayment Comparision <<
 """)
