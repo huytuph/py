@@ -28,6 +28,7 @@ while bal >= 0:
 y = n_total // n # years
 m = n_total % n # months
 
+# print results
 print(f"""
 ===========================================
 total Interest Paid: {i_total}

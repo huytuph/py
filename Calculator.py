@@ -10,7 +10,6 @@ while True:
             x = float(input("\nEnter a number: "))
             continue
         elif restart == "n":
-            print("\n\n\n>> Tu is the Best !! <<\n\n\n")
             break
     y = float(input("\nEnter a number: "))
     if operator == "*":
